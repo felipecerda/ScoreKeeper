@@ -18,26 +18,41 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    /**
+     * Increases the number of goals by 1 for Team A.
+     */
     public void oneGoalA(View v) {
         scoreTeamA = scoreTeamA + 1;
         displayScoreTeamA(scoreTeamA);
     }
 
+    /**
+     * Increases the number of fouls by 1 for Team A.
+     */
     public void foulA(View v) {
         foulsA = foulsA + 1;
         displayFoulsA(foulsA);
     }
 
+    /**
+     * Increases the number of goals by 1 for Team B.
+     */
     public void oneGoalB(View v) {
         scoreTeamB = scoreTeamB + 1;
         displayScoreTeamB(scoreTeamB);
     }
 
+    /**
+     * Increases the number of fouls by 1 for Team B.
+     */
     public void foulB(View v) {
         foulsB = foulsB + 1;
         displayFoulsB(foulsB);
     }
 
+    /**
+     * Resets the goals and fouls for both teams.
+     */
     public void resetScore(View v) {
         scoreTeamA = 0;
         scoreTeamB = 0;
